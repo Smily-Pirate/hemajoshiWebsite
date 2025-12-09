@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hema Joshi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="saplings.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="files/hemajoshilogo.png" alt="Logo" class="logo-image">
+                        <span class="logo-text">Hema Joshi</span>
+                    </a>
+                </div>
+
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" class="nav-btn">About</a></li>
+                    <li><a href="saplings.html" class="nav-btn">Saplings</a></li>
+                    <li><a href="contact.html" class="nav-btn">Contact</a></li>
+                    <li><a href="assets/HemaJoshiCV.pdf" target="_blank" class="resume-pill">Resume</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <h1 class="sapling-title">My Sapling Collection</h1>
+        <p class="sapling-subtitle">This is not a business — I simply enjoy giving saplings to people who love plants.
+        </p>
+
+        <!-- Filter Section -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="fruit">Fruit Plants</button>
+            <button class="filter-btn" data-filter="flower">Flowers</button>
+            <button class="filter-btn" data-filter="herb">Herbs</button>
+        </div>
+
+        <!-- Saplings Grid -->
+        <div class="sapling-grid">
+
+            <!-- Example Sapling 1 -->
+            <div class="sapling-card" data-category="fruit">
+                <img src="files/mango.jpg" alt="Mango Plant">
+                <h3>Mango Plant</h3>
+                <p><strong>Age:</strong> 6 months</p>
+                <p><strong>Price:</strong> FREE</p>
+                <p><strong>Contact:</strong> +977 98XXXXXXXX</p>
+            </div>
+
+            <!-- Example Sapling 2 -->
+            <div class="sapling-card" data-category="flower">
+                <img src="files/rose.jpg" alt="Rose Plant">
+                <h3>Rose Plant</h3>
+                <p><strong>Age:</strong> 3 months</p>
+                <p><strong>Price:</strong> FREE</p>
+                <p><strong>Contact:</strong> myemail@example.com</p>
+            </div>
+
+            <!-- Example Sapling 3 -->
+            <div class="sapling-card" data-category="herb">
+                <img src="files/basil.jpg" alt="Basil Plant">
+                <h3>Basil (Tulsi)</h3>
+                <p><strong>Age:</strong> 2 months</p>
+                <p><strong>Price:</strong> FREE</p>
+                <p><strong>Contact:</strong> +977 98XXXXXXXX</p>
+            </div>
+
+        </div>
+    </main>
+
+
+
+
+
+
+    <!-- Dynamic Footer -->
+    <footer>
+        <p>© 2025 My Website. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Loader Script -->
+    <!-- <script src="load.js"></script> -->
+    <script src="nev.js"></script>
+    <script src="saplings.js"></script>
+</body>
+
+
+</html>

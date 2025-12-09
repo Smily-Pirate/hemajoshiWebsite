@@ -1,0 +1,137 @@
+
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background: rgba(74, 157, 95, 0.75);
+    padding: 0.8rem 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+}
+
+.logo-image {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo-text {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Nav Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+/* Normal buttons */
+.nav-btn {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    color: white;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-btn:hover {
+    background: rgba(255,255,255,0.25);
+}
+
+/* Resume button */
+.resume-pill {
+    padding: 0.5rem 1.2rem;
+    background: white;
+    color: #4a9d5f;
+    font-weight: bold;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.resume-pill:hover {
+    background: #e5ffe6;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 26px;
+    height: 3px;
+    background: white;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+/* Mobile Nav */
+@media (max-width: 768px) {
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background: #4a9d5f;
+        width: 70%;
+        height: 100vh;
+        flex-direction: column;
+        gap: 2rem;
+        padding-top: 8rem;
+        transition: 0.35s ease;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+}

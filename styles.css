@@ -1,0 +1,122 @@
+html{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+   
+}
+
+
+footer{
+    background-color: #4a9d5f;
+    /* color: #2d5f3d; */
+    padding: 1.5rem;
+    text-align:center;
+    margin-top: auto;
+}
+
+main{
+    padding: 1rem;
+    max-width: 56rem;
+    margin: auto;
+}
+
+/* header CSS */
+/* header {
+    background: #4a9d5f;
+    color: white;
+    padding: 1rem 0rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+} */
+
+/* --- Hero Section --- */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 0;
+    gap: 2rem;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    color: #2d5f3d;
+}
+
+.hero-text p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+}
+
+.resume-download {
+    display: inline-block;
+    padding: 0.7rem 1.4rem;
+    background: #4a9d5f;
+    color: white;
+    border-radius: 0.4rem;
+    text-decoration: none;
+}
+
+.hero-img img {
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Section Titles */
+main h2 {
+    margin-top: 2rem;
+    color: #2d5f3d;
+}
+
+/* Skills */
+.skills ul {
+    margin: 1rem 0;
+    padding-left: 1.2rem;
+}
+
+.skills li {
+    margin: 0.3rem 0;
+}
+
+/* Experience Cards */
+.exp-card {
+    background: white;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    /* Sidebar (your green navigation block) */
+    .sidebar {
+        width: 100%;
+        order: -1; /* move above content if needed */
+    }
+
+    /* Main content */
+    .content {
+        width: 100%;
+    }
+}
+
+
+
+
+
