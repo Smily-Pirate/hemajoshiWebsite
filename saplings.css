@@ -4,6 +4,10 @@
     padding: 2rem 1.5rem;
 }
 
+.sapling-title{
+    color: rgba(74, 157, 95, 0.75);
+}
+
 .page-title {
     text-align: center;
     margin-bottom: 0.5rem;
@@ -25,7 +29,7 @@
 }
 
 .filter-btn {
-    background: #4a9d5f;
+    background: rgba(74, 157, 95, 0.75);
     color: white;
     padding: 0.5rem 1.2rem;
     border: none;
